@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="index.css">
+    <script rel="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script rel="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    <script rel="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<form>
+        <div class="col-2">
+        	<span class="switch">
+                <span class="label">Off</span>
+                <span class="switch-slide"><span class="switch-icon"></span></span>
+                <span class="label">On</span>
+            </span>
+        </div>
+        <div class="col-10">
+            <span class="dropdown" sort="asc" source="resources/services.txt">
+                  <input class="textbox select"><span class="arrow"></span>
+                  <span class="placeholder">Service</span>
+                  <ul>
+                  </ul>
+            </span>
+        </div>
+		<div class="col-6">
+        	<input class="textbox required" maxLen="20">
+            <span class="placeholder">First Name</span>
+            <span class="hint">Required</span>
+            <span class="counter"></span>
+        </div>
+        <div class="col-6">
+        	<input class="textbox required">
+            <span class="placeholder">Last Name</span>
+            <span class="hint">Required</span>
+        </div>
+        <div class="col-8">
+        	<input class="textbox">
+            <span class="placeholder">Street Address</span>
+        </div>
+        <div class="col-4">
+        	<input class="textbox">
+            <span class="placeholder">Unit / Apt</span>
+        </div>
+        <div class="col-4">
+        	<input class="textbox">
+            <span class="placeholder">City</span>
+        </div>
+        <div class="col-4">
+        	<span class="dropdown" sort="asc" height="256" source="resources/states.txt">
+              <input class="textbox select"><span class="arrow"></span>
+              <span class="placeholder">State</span>
+              <ul>
+              </ul>
+          	</span>
+        </div>
+        <div class="col-4">
+        	<input class="textbox zipcode">
+            <span class="placeholder">Zip Code</span>
+            <span class="hint">12345</span>
+        </div>
+        <div class="col-6">
+        	<input class="textbox email">
+            <span class="placeholder">Email</span>
+            <span class="hint">contact@me.com</span>
+        </div>
+        <div class="col-6">
+        	<input class="textbox phone">
+            <span class="placeholder">Phone</span>
+            <span class="hint">999-999-9999</span>
+        </div>
+        <div class="col-12 auto-height">
+        	<div class="textarea" minLen="-1" maxLen="120"></div>
+            <span class="placeholder">Message</span>
+            <span class="counter"></span>
+        </div>
+        <div class="option-group col-12 auto-height">
+            <span class="option">
+                <span class="option-icon"></span>
+                <span class="label">Subscribe to monthly newsletter</span>
+            </span>
+            <span class="option">
+                <span class="option-icon"></span>
+                <span class="label">Send me email updates</span>
+            </span>
+        </div>
+        <div class="slider-group">
+            <div class="col-1">
+                <input class="textbox range">
+            	<span class="placeholder">Value</span>
+                <span class="hint"></span>
+            </div>
+            <div class="col-11">
+                <span class="slider" value="40" max="100">
+                    <span class="slider-bar">
+                        <span class="slider-icon"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="col-12">
+            <span class="slider" value="80" max="200">
+                <span class="slider-bar">
+                    <span class="slider-icon"></span>
+                </span>
+                <span class="min"></span>
+                <span class="max"></span>
+            </span>
+        </div>
+      	<div class="col-12">
+        	<a class="button" id="submit">SUBMIT</a>
+        	<a class="button" id="reset">RESET</a>
+        </div>
+        <div class="col-12 submit-message"></div>
+    </form>
+</body>
+</html>
